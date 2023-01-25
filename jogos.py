@@ -17,5 +17,5 @@ def escolhe_jogo():
         print("Jogando forca")
         forca.jogar()
 
-if(__name__ == "__main__")
+if (__name__ == "__main__"):
     escolhe_jogo()
