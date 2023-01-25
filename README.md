@@ -23,7 +23,7 @@ Os projetos foram desenvolvidos com as seguintes tecnologias:
 
 ## 💻 Projetos
 
-- [Jogo da adivinhação]() (desenvolvido no curso: "Python: começando com a linguagem" da Alura.)
+- [Jogo da adivinhação]() (desenvolvido no curso: "Python: começando com a linguagem" da Alura)
 
 ## :memo: Licença
 
