@@ -5,8 +5,10 @@ def jogar():
     print("*********************************")
 
     palavra_secreta = "banana".upper()
-    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
-    letras_faltando = str(letras_acertadas.count("_"))
+    letras_acertadas = []
+
+    for letra in palavra_secreta:
+        letras_acertadas.append("_")
 
     enforcou = False
     acertou = False
@@ -14,7 +16,7 @@ def jogar():
 
     print(letras_acertadas)
 
-    while (not enforcou and not acertou):
+    while (True):
 
         chute = input("Qual letra?")
         chute = chute.strip().upper()
@@ -28,9 +30,12 @@ def jogar():
 
         else:
             erros += 1
+            print("Ops, você errou! Faltam {} tentativas.".format(6 - erros))
 
-        enforcou = erros == 6
-        acertou = "_" not in letras_acertadas
+        if (erros == 6):
+            break
+        if ("_" not in letras_acertadas):
+            break
         print(letras_acertadas)
 
     if (acertou):
